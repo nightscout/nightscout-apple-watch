@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F38C9A651AF8103C00FAA910 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A641AF8103C00FAA910 /* main.m */; };
+		F38C9A681AF8103C00FAA910 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A671AF8103C00FAA910 /* AppDelegate.m */; };
+		F38C9A6B1AF8103C00FAA910 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A6A1AF8103C00FAA910 /* ViewController.m */; };
+		F38C9A6E1AF8103C00FAA910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A6C1AF8103C00FAA910 /* Main.storyboard */; };
+		F38C9A701AF8103C00FAA910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A6F1AF8103C00FAA910 /* Images.xcassets */; };
+		F38C9A731AF8103C00FAA910 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A711AF8103C00FAA910 /* LaunchScreen.xib */; };
+		F38C9A7F1AF8103C00FAA910 /* NightscoutWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A7E1AF8103C00FAA910 /* NightscoutWatchTests.m */; };
+		F38C9A921AF8106500FAA910 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A911AF8106500FAA910 /* InterfaceController.m */; };
+		F38C9A951AF8106500FAA910 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A941AF8106500FAA910 /* GlanceController.m */; };
+		F38C9A971AF8106500FAA910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A961AF8106500FAA910 /* Images.xcassets */; };
+		F38C9A9B1AF8106500FAA910 /* NightscoutWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */; };
+		F38C9AA31AF8106500FAA910 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AA11AF8106500FAA910 /* Interface.storyboard */; };
+		F38C9AA51AF8106500FAA910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AA41AF8106500FAA910 /* Images.xcassets */; };
+		F38C9AA81AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F38C9AC51AF817E300FAA910 /* arrow_diagDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB01AF817E300FAA910 /* arrow_diagDown_green.png */; };
+		F38C9AC61AF817E300FAA910 /* arrow_diagDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB01AF817E300FAA910 /* arrow_diagDown_green.png */; };
+		F38C9AC71AF817E300FAA910 /* arrow_diagDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB11AF817E300FAA910 /* arrow_diagDown_red.png */; };
+		F38C9AC81AF817E300FAA910 /* arrow_diagDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB11AF817E300FAA910 /* arrow_diagDown_red.png */; };
+		F38C9AC91AF817E300FAA910 /* arrow_diagDown_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB21AF817E300FAA910 /* arrow_diagDown_yellow.png */; };
+		F38C9ACA1AF817E300FAA910 /* arrow_diagDown_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB21AF817E300FAA910 /* arrow_diagDown_yellow.png */; };
+		F38C9ACB1AF817E300FAA910 /* arrow_diagUp_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB31AF817E300FAA910 /* arrow_diagUp_yellow.png */; };
+		F38C9ACC1AF817E300FAA910 /* arrow_diagUp_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB31AF817E300FAA910 /* arrow_diagUp_yellow.png */; };
+		F38C9ACD1AF817E300FAA910 /* arrow_diagUp_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB41AF817E300FAA910 /* arrow_diagUp_red.png */; };
+		F38C9ACE1AF817E300FAA910 /* arrow_diagUp_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB41AF817E300FAA910 /* arrow_diagUp_red.png */; };
+		F38C9ACF1AF817E300FAA910 /* arrow_doubleDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB51AF817E300FAA910 /* arrow_doubleDown_green.png */; };
+		F38C9AD01AF817E300FAA910 /* arrow_doubleDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB51AF817E300FAA910 /* arrow_doubleDown_green.png */; };
+		F38C9AD11AF817E300FAA910 /* arrow_doubleDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB61AF817E300FAA910 /* arrow_doubleDown_red.png */; };
+		F38C9AD21AF817E300FAA910 /* arrow_doubleDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB61AF817E300FAA910 /* arrow_doubleDown_red.png */; };
+		F38C9AD31AF817E300FAA910 /* arrow_doubleDown_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB71AF817E300FAA910 /* arrow_doubleDown_yellow.png */; };
+		F38C9AD41AF817E300FAA910 /* arrow_doubleDown_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB71AF817E300FAA910 /* arrow_doubleDown_yellow.png */; };
+		F38C9AD51AF817E300FAA910 /* arrow_doubleUp_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB81AF817E300FAA910 /* arrow_doubleUp_green.png */; };
+		F38C9AD61AF817E300FAA910 /* arrow_doubleUp_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB81AF817E300FAA910 /* arrow_doubleUp_green.png */; };
+		F38C9AD71AF817E300FAA910 /* arrow_doubleUp_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB91AF817E300FAA910 /* arrow_doubleUp_red.png */; };
+		F38C9AD81AF817E300FAA910 /* arrow_doubleUp_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB91AF817E300FAA910 /* arrow_doubleUp_red.png */; };
+		F38C9AD91AF817E300FAA910 /* arrow_doubleUp_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABA1AF817E300FAA910 /* arrow_doubleUp_yellow.png */; };
+		F38C9ADA1AF817E300FAA910 /* arrow_doubleUp_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABA1AF817E300FAA910 /* arrow_doubleUp_yellow.png */; };
+		F38C9ADB1AF817E300FAA910 /* arrow_over_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABB1AF817E300FAA910 /* arrow_over_green.png */; };
+		F38C9ADC1AF817E300FAA910 /* arrow_over_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABB1AF817E300FAA910 /* arrow_over_green.png */; };
+		F38C9ADD1AF817E300FAA910 /* arrow_over_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABC1AF817E300FAA910 /* arrow_over_red.png */; };
+		F38C9ADE1AF817E300FAA910 /* arrow_over_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABC1AF817E300FAA910 /* arrow_over_red.png */; };
+		F38C9ADF1AF817E300FAA910 /* arrow_over_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABD1AF817E300FAA910 /* arrow_over_yellow.png */; };
+		F38C9AE01AF817E300FAA910 /* arrow_over_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABD1AF817E300FAA910 /* arrow_over_yellow.png */; };
+		F38C9AE11AF817E300FAA910 /* arrow_singleDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABE1AF817E300FAA910 /* arrow_singleDown_green.png */; };
+		F38C9AE21AF817E300FAA910 /* arrow_singleDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABE1AF817E300FAA910 /* arrow_singleDown_green.png */; };
+		F38C9AE31AF817E300FAA910 /* arrow_singleDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABF1AF817E300FAA910 /* arrow_singleDown_red.png */; };
+		F38C9AE41AF817E300FAA910 /* arrow_singleDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9ABF1AF817E300FAA910 /* arrow_singleDown_red.png */; };
+		F38C9AE51AF817E300FAA910 /* arrow_singleDown_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC01AF817E300FAA910 /* arrow_singleDown_yellow.png */; };
+		F38C9AE61AF817E300FAA910 /* arrow_singleDown_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC01AF817E300FAA910 /* arrow_singleDown_yellow.png */; };
+		F38C9AE71AF817E300FAA910 /* arrow_singleUp_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC11AF817E300FAA910 /* arrow_singleUp_yellow.png */; };
+		F38C9AE81AF817E300FAA910 /* arrow_singleUp_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC11AF817E300FAA910 /* arrow_singleUp_yellow.png */; };
+		F38C9AE91AF817E300FAA910 /* arrow_singleUp_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC21AF817E300FAA910 /* arrow_singleUp_red.png */; };
+		F38C9AEA1AF817E300FAA910 /* arrow_singleUp_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC21AF817E300FAA910 /* arrow_singleUp_red.png */; };
+		F38C9AEB1AF817E300FAA910 /* NS_raw_20.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC31AF817E300FAA910 /* NS_raw_20.png */; };
+		F38C9AEC1AF817E300FAA910 /* NS_raw_20.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC31AF817E300FAA910 /* NS_raw_20.png */; };
+		F38C9AED1AF817E300FAA910 /* NS_raw_21.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC41AF817E300FAA910 /* NS_raw_21.png */; };
+		F38C9AEE1AF817E300FAA910 /* NS_raw_21.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AC41AF817E300FAA910 /* NS_raw_21.png */; };
+		F38C9AF01AF81A7100FAA910 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AEF1AF81A7100FAA910 /* line@2x.png */; };
+		F38C9AF11AF81A7100FAA910 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AEF1AF81A7100FAA910 /* line@2x.png */; };
+		F3C867B01AF938D700603B52 /* arrow_diagUp_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867AF1AF938D700603B52 /* arrow_diagUp_green.png */; };
+		F3C867B11AF938D700603B52 /* arrow_diagUp_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867AF1AF938D700603B52 /* arrow_diagUp_green.png */; };
+		F3C867B31AF938F400603B52 /* arrow_singleUp_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867B21AF938F400603B52 /* arrow_singleUp_green.png */; };
+		F3C867B41AF938F400603B52 /* arrow_singleUp_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867B21AF938F400603B52 /* arrow_singleUp_green.png */; };
+		F3C867B71AFD1E2900603B52 /* TableInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C867B61AFD1E2900603B52 /* TableInterfaceController.m */; };
+		F3C867BA1AFD1F2500603B52 /* BGHistoryTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C867B91AFD1F2500603B52 /* BGHistoryTableRow.m */; };
+		F3C867C41B0163B000603B52 /* arrow_diagUp_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867BD1B0163B000603B52 /* arrow_diagUp_gray.png */; };
+		F3C867C51B0163B000603B52 /* arrow_diagUp_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867BD1B0163B000603B52 /* arrow_diagUp_gray.png */; };
+		F3C867C61B0163B000603B52 /* arrow_diagDown_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867BE1B0163B000603B52 /* arrow_diagDown_gray.png */; };
+		F3C867C71B0163B000603B52 /* arrow_diagDown_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867BE1B0163B000603B52 /* arrow_diagDown_gray.png */; };
+		F3C867C81B0163B000603B52 /* arrow_doubleDown_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867BF1B0163B000603B52 /* arrow_doubleDown_gray.png */; };
+		F3C867C91B0163B000603B52 /* arrow_doubleDown_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867BF1B0163B000603B52 /* arrow_doubleDown_gray.png */; };
+		F3C867CA1B0163B000603B52 /* arrow_doubleUp_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C01B0163B000603B52 /* arrow_doubleUp_gray.png */; };
+		F3C867CB1B0163B000603B52 /* arrow_doubleUp_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C01B0163B000603B52 /* arrow_doubleUp_gray.png */; };
+		F3C867CC1B0163B000603B52 /* arrow_over_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C11B0163B000603B52 /* arrow_over_gray.png */; };
+		F3C867CD1B0163B000603B52 /* arrow_over_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C11B0163B000603B52 /* arrow_over_gray.png */; };
+		F3C867CE1B0163B000603B52 /* arrow_singleDown_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C21B0163B000603B52 /* arrow_singleDown_gray.png */; };
+		F3C867CF1B0163B000603B52 /* arrow_singleDown_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C21B0163B000603B52 /* arrow_singleDown_gray.png */; };
+		F3C867D01B0163B000603B52 /* arrow_singleUp_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C31B0163B000603B52 /* arrow_singleUp_gray.png */; };
+		F3C867D11B0163B000603B52 /* arrow_singleUp_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C867C31B0163B000603B52 /* arrow_singleUp_gray.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F38C9A791AF8103C00FAA910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F38C9A5E1AF8103C00FAA910;
+			remoteInfo = NightscoutWatch;
+		};
+		F38C9A9C1AF8106500FAA910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F38C9A991AF8106500FAA910;
+			remoteInfo = "NightscoutWatch WatchKit App";
+		};
+		F38C9AA61AF8106500FAA910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F38C9A8B1AF8106500FAA910;
+			remoteInfo = "NightscoutWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F38C9AAF1AF8106500FAA910 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F38C9AA81AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F38C9A5F1AF8103C00FAA910 /* NightscoutWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightscoutWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38C9A631AF8103C00FAA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38C9A641AF8103C00FAA910 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F38C9A661AF8103C00FAA910 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F38C9A671AF8103C00FAA910 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F38C9A691AF8103C00FAA910 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F38C9A6A1AF8103C00FAA910 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F38C9A6D1AF8103C00FAA910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F38C9A6F1AF8103C00FAA910 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F38C9A721AF8103C00FAA910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F38C9A781AF8103C00FAA910 /* NightscoutWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightscoutWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38C9A7D1AF8103C00FAA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38C9A7E1AF8103C00FAA910 /* NightscoutWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NightscoutWatchTests.m; sourceTree = "<group>"; };
+		F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NightscoutWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38C9A8F1AF8106500FAA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38C9A901AF8106500FAA910 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		F38C9A911AF8106500FAA910 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		F38C9A931AF8106500FAA910 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		F38C9A941AF8106500FAA910 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		F38C9A961AF8106500FAA910 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NightscoutWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38C9AA01AF8106500FAA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38C9AA21AF8106500FAA910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F38C9AA41AF8106500FAA910 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F38C9AB01AF817E300FAA910 /* arrow_diagDown_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagDown_green.png; sourceTree = "<group>"; };
+		F38C9AB11AF817E300FAA910 /* arrow_diagDown_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagDown_red.png; sourceTree = "<group>"; };
+		F38C9AB21AF817E300FAA910 /* arrow_diagDown_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagDown_yellow.png; sourceTree = "<group>"; };
+		F38C9AB31AF817E300FAA910 /* arrow_diagUp_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagUp_yellow.png; sourceTree = "<group>"; };
+		F38C9AB41AF817E300FAA910 /* arrow_diagUp_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagUp_red.png; sourceTree = "<group>"; };
+		F38C9AB51AF817E300FAA910 /* arrow_doubleDown_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleDown_green.png; sourceTree = "<group>"; };
+		F38C9AB61AF817E300FAA910 /* arrow_doubleDown_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleDown_red.png; sourceTree = "<group>"; };
+		F38C9AB71AF817E300FAA910 /* arrow_doubleDown_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleDown_yellow.png; sourceTree = "<group>"; };
+		F38C9AB81AF817E300FAA910 /* arrow_doubleUp_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleUp_green.png; sourceTree = "<group>"; };
+		F38C9AB91AF817E300FAA910 /* arrow_doubleUp_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleUp_red.png; sourceTree = "<group>"; };
+		F38C9ABA1AF817E300FAA910 /* arrow_doubleUp_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleUp_yellow.png; sourceTree = "<group>"; };
+		F38C9ABB1AF817E300FAA910 /* arrow_over_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_over_green.png; sourceTree = "<group>"; };
+		F38C9ABC1AF817E300FAA910 /* arrow_over_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_over_red.png; sourceTree = "<group>"; };
+		F38C9ABD1AF817E300FAA910 /* arrow_over_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_over_yellow.png; sourceTree = "<group>"; };
+		F38C9ABE1AF817E300FAA910 /* arrow_singleDown_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleDown_green.png; sourceTree = "<group>"; };
+		F38C9ABF1AF817E300FAA910 /* arrow_singleDown_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleDown_red.png; sourceTree = "<group>"; };
+		F38C9AC01AF817E300FAA910 /* arrow_singleDown_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleDown_yellow.png; sourceTree = "<group>"; };
+		F38C9AC11AF817E300FAA910 /* arrow_singleUp_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleUp_yellow.png; sourceTree = "<group>"; };
+		F38C9AC21AF817E300FAA910 /* arrow_singleUp_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleUp_red.png; sourceTree = "<group>"; };
+		F38C9AC31AF817E300FAA910 /* NS_raw_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NS_raw_20.png; sourceTree = "<group>"; };
+		F38C9AC41AF817E300FAA910 /* NS_raw_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NS_raw_21.png; sourceTree = "<group>"; };
+		F38C9AEF1AF81A7100FAA910 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		F3C867AF1AF938D700603B52 /* arrow_diagUp_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagUp_green.png; sourceTree = "<group>"; };
+		F3C867B21AF938F400603B52 /* arrow_singleUp_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleUp_green.png; sourceTree = "<group>"; };
+		F3C867B51AFD1E2900603B52 /* TableInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableInterfaceController.h; path = "../NightscoutWatch WatchKit App/TableInterfaceController.h"; sourceTree = "<group>"; };
+		F3C867B61AFD1E2900603B52 /* TableInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableInterfaceController.m; path = "../NightscoutWatch WatchKit App/TableInterfaceController.m"; sourceTree = "<group>"; };
+		F3C867B81AFD1F2500603B52 /* BGHistoryTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGHistoryTableRow.h; sourceTree = "<group>"; };
+		F3C867B91AFD1F2500603B52 /* BGHistoryTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGHistoryTableRow.m; sourceTree = "<group>"; };
+		F3C867BB1B012B4500603B52 /* NightscoutWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NightscoutWatch.entitlements; sourceTree = "<group>"; };
+		F3C867BC1B012B5900603B52 /* NightscoutWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "NightscoutWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		F3C867BD1B0163B000603B52 /* arrow_diagUp_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagUp_gray.png; sourceTree = "<group>"; };
+		F3C867BE1B0163B000603B52 /* arrow_diagDown_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_diagDown_gray.png; sourceTree = "<group>"; };
+		F3C867BF1B0163B000603B52 /* arrow_doubleDown_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleDown_gray.png; sourceTree = "<group>"; };
+		F3C867C01B0163B000603B52 /* arrow_doubleUp_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_doubleUp_gray.png; sourceTree = "<group>"; };
+		F3C867C11B0163B000603B52 /* arrow_over_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_over_gray.png; sourceTree = "<group>"; };
+		F3C867C21B0163B000603B52 /* arrow_singleDown_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleDown_gray.png; sourceTree = "<group>"; };
+		F3C867C31B0163B000603B52 /* arrow_singleUp_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_singleUp_gray.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F38C9A5C1AF8103C00FAA910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A751AF8103C00FAA910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A891AF8106500FAA910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F38C9A561AF8103C00FAA910 = {
+			isa = PBXGroup;
+			children = (
+				F3C867DE1B02682500603B52 /* Resources */,
+				F38C9A611AF8103C00FAA910 /* NightscoutWatch */,
+				F38C9A7B1AF8103C00FAA910 /* NightscoutWatchTests */,
+				F38C9A8D1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */,
+				F38C9A9E1AF8106500FAA910 /* NightscoutWatch WatchKit App */,
+				F38C9A601AF8103C00FAA910 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F38C9A601AF8103C00FAA910 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9A5F1AF8103C00FAA910 /* NightscoutWatch.app */,
+				F38C9A781AF8103C00FAA910 /* NightscoutWatchTests.xctest */,
+				F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */,
+				F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F38C9A611AF8103C00FAA910 /* NightscoutWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F3C867BB1B012B4500603B52 /* NightscoutWatch.entitlements */,
+				F38C9A661AF8103C00FAA910 /* AppDelegate.h */,
+				F38C9A671AF8103C00FAA910 /* AppDelegate.m */,
+				F38C9A691AF8103C00FAA910 /* ViewController.h */,
+				F38C9A6A1AF8103C00FAA910 /* ViewController.m */,
+				F38C9A6C1AF8103C00FAA910 /* Main.storyboard */,
+				F38C9A6F1AF8103C00FAA910 /* Images.xcassets */,
+				F38C9A711AF8103C00FAA910 /* LaunchScreen.xib */,
+				F38C9A621AF8103C00FAA910 /* Supporting Files */,
+			);
+			path = NightscoutWatch;
+			sourceTree = "<group>";
+		};
+		F38C9A621AF8103C00FAA910 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9A631AF8103C00FAA910 /* Info.plist */,
+				F38C9A641AF8103C00FAA910 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F38C9A7B1AF8103C00FAA910 /* NightscoutWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9A7E1AF8103C00FAA910 /* NightscoutWatchTests.m */,
+				F38C9A7C1AF8103C00FAA910 /* Supporting Files */,
+			);
+			path = NightscoutWatchTests;
+			sourceTree = "<group>";
+		};
+		F38C9A7C1AF8103C00FAA910 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9A7D1AF8103C00FAA910 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F38C9A8D1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3C867BC1B012B5900603B52 /* NightscoutWatch WatchKit Extension.entitlements */,
+				F38C9A901AF8106500FAA910 /* InterfaceController.h */,
+				F38C9A911AF8106500FAA910 /* InterfaceController.m */,
+				F38C9A931AF8106500FAA910 /* GlanceController.h */,
+				F38C9A941AF8106500FAA910 /* GlanceController.m */,
+				F3C867B51AFD1E2900603B52 /* TableInterfaceController.h */,
+				F3C867B61AFD1E2900603B52 /* TableInterfaceController.m */,
+				F3C867B81AFD1F2500603B52 /* BGHistoryTableRow.h */,
+				F3C867B91AFD1F2500603B52 /* BGHistoryTableRow.m */,
+				F38C9A961AF8106500FAA910 /* Images.xcassets */,
+				F38C9A8E1AF8106500FAA910 /* Supporting Files */,
+			);
+			path = "NightscoutWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F38C9A8E1AF8106500FAA910 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9A8F1AF8106500FAA910 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F38C9A9E1AF8106500FAA910 /* NightscoutWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9AB01AF817E300FAA910 /* arrow_diagDown_green.png */,
+				F38C9AB11AF817E300FAA910 /* arrow_diagDown_red.png */,
+				F38C9AB21AF817E300FAA910 /* arrow_diagDown_yellow.png */,
+				F38C9AB31AF817E300FAA910 /* arrow_diagUp_yellow.png */,
+				F38C9AB41AF817E300FAA910 /* arrow_diagUp_red.png */,
+				F3C867AF1AF938D700603B52 /* arrow_diagUp_green.png */,
+				F38C9AB51AF817E300FAA910 /* arrow_doubleDown_green.png */,
+				F38C9AB61AF817E300FAA910 /* arrow_doubleDown_red.png */,
+				F38C9AB71AF817E300FAA910 /* arrow_doubleDown_yellow.png */,
+				F38C9AB81AF817E300FAA910 /* arrow_doubleUp_green.png */,
+				F38C9AB91AF817E300FAA910 /* arrow_doubleUp_red.png */,
+				F38C9ABA1AF817E300FAA910 /* arrow_doubleUp_yellow.png */,
+				F38C9ABB1AF817E300FAA910 /* arrow_over_green.png */,
+				F38C9ABC1AF817E300FAA910 /* arrow_over_red.png */,
+				F38C9ABD1AF817E300FAA910 /* arrow_over_yellow.png */,
+				F38C9ABE1AF817E300FAA910 /* arrow_singleDown_green.png */,
+				F38C9ABF1AF817E300FAA910 /* arrow_singleDown_red.png */,
+				F38C9AC01AF817E300FAA910 /* arrow_singleDown_yellow.png */,
+				F38C9AC11AF817E300FAA910 /* arrow_singleUp_yellow.png */,
+				F38C9AC21AF817E300FAA910 /* arrow_singleUp_red.png */,
+				F3C867B21AF938F400603B52 /* arrow_singleUp_green.png */,
+				F3C867BD1B0163B000603B52 /* arrow_diagUp_gray.png */,
+				F3C867BE1B0163B000603B52 /* arrow_diagDown_gray.png */,
+				F3C867BF1B0163B000603B52 /* arrow_doubleDown_gray.png */,
+				F3C867C01B0163B000603B52 /* arrow_doubleUp_gray.png */,
+				F3C867C11B0163B000603B52 /* arrow_over_gray.png */,
+				F3C867C21B0163B000603B52 /* arrow_singleDown_gray.png */,
+				F3C867C31B0163B000603B52 /* arrow_singleUp_gray.png */,
+				F38C9AC31AF817E300FAA910 /* NS_raw_20.png */,
+				F38C9AC41AF817E300FAA910 /* NS_raw_21.png */,
+				F38C9AEF1AF81A7100FAA910 /* line@2x.png */,
+				F38C9AA11AF8106500FAA910 /* Interface.storyboard */,
+				F38C9AA41AF8106500FAA910 /* Images.xcassets */,
+				F38C9A9F1AF8106500FAA910 /* Supporting Files */,
+			);
+			path = "NightscoutWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F38C9A9F1AF8106500FAA910 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F38C9AA01AF8106500FAA910 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3C867DE1B02682500603B52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = NightscoutWatch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F38C9A5E1AF8103C00FAA910 /* NightscoutWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F38C9A821AF8103C00FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch" */;
+			buildPhases = (
+				F38C9A5B1AF8103C00FAA910 /* Sources */,
+				F38C9A5C1AF8103C00FAA910 /* Frameworks */,
+				F38C9A5D1AF8103C00FAA910 /* Resources */,
+				F38C9AAF1AF8106500FAA910 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F38C9AA71AF8106500FAA910 /* PBXTargetDependency */,
+			);
+			name = NightscoutWatch;
+			productName = NightscoutWatch;
+			productReference = F38C9A5F1AF8103C00FAA910 /* NightscoutWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F38C9A771AF8103C00FAA910 /* NightscoutWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F38C9A851AF8103C00FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatchTests" */;
+			buildPhases = (
+				F38C9A741AF8103C00FAA910 /* Sources */,
+				F38C9A751AF8103C00FAA910 /* Frameworks */,
+				F38C9A761AF8103C00FAA910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F38C9A7A1AF8103C00FAA910 /* PBXTargetDependency */,
+			);
+			name = NightscoutWatchTests;
+			productName = NightscoutWatchTests;
+			productReference = F38C9A781AF8103C00FAA910 /* NightscoutWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F38C9A8B1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F38C9AAC1AF8106500FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch WatchKit Extension" */;
+			buildPhases = (
+				F38C9A881AF8106500FAA910 /* Sources */,
+				F38C9A891AF8106500FAA910 /* Frameworks */,
+				F38C9A8A1AF8106500FAA910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F38C9A9D1AF8106500FAA910 /* PBXTargetDependency */,
+			);
+			name = "NightscoutWatch WatchKit Extension";
+			productName = "NightscoutWatch WatchKit Extension";
+			productReference = F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F38C9A991AF8106500FAA910 /* NightscoutWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F38C9AA91AF8106500FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch WatchKit App" */;
+			buildPhases = (
+				F38C9A981AF8106500FAA910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NightscoutWatch WatchKit App";
+			productName = "NightscoutWatch WatchKit App";
+			productReference = F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F38C9A571AF8103C00FAA910 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "30 South";
+				TargetAttributes = {
+					F38C9A5E1AF8103C00FAA910 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CLG3T57FS8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F38C9A771AF8103C00FAA910 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F38C9A5E1AF8103C00FAA910;
+					};
+					F38C9A8B1AF8106500FAA910 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CLG3T57FS8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F38C9A991AF8106500FAA910 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CLG3T57FS8;
+					};
+				};
+			};
+			buildConfigurationList = F38C9A5A1AF8103C00FAA910 /* Build configuration list for PBXProject "NightscoutWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F38C9A561AF8103C00FAA910;
+			productRefGroup = F38C9A601AF8103C00FAA910 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F38C9A5E1AF8103C00FAA910 /* NightscoutWatch */,
+				F38C9A771AF8103C00FAA910 /* NightscoutWatchTests */,
+				F38C9A8B1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */,
+				F38C9A991AF8106500FAA910 /* NightscoutWatch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F38C9A5D1AF8103C00FAA910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38C9A6E1AF8103C00FAA910 /* Main.storyboard in Resources */,
+				F38C9A731AF8103C00FAA910 /* LaunchScreen.xib in Resources */,
+				F38C9A701AF8103C00FAA910 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A761AF8103C00FAA910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A8A1AF8106500FAA910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C867C41B0163B000603B52 /* arrow_diagUp_gray.png in Resources */,
+				F38C9AE71AF817E300FAA910 /* arrow_singleUp_yellow.png in Resources */,
+				F3C867D01B0163B000603B52 /* arrow_singleUp_gray.png in Resources */,
+				F3C867CE1B0163B000603B52 /* arrow_singleDown_gray.png in Resources */,
+				F38C9ADD1AF817E300FAA910 /* arrow_over_red.png in Resources */,
+				F38C9AD51AF817E300FAA910 /* arrow_doubleUp_green.png in Resources */,
+				F38C9ADB1AF817E300FAA910 /* arrow_over_green.png in Resources */,
+				F3C867B01AF938D700603B52 /* arrow_diagUp_green.png in Resources */,
+				F38C9AD91AF817E300FAA910 /* arrow_doubleUp_yellow.png in Resources */,
+				F38C9AED1AF817E300FAA910 /* NS_raw_21.png in Resources */,
+				F3C867CA1B0163B000603B52 /* arrow_doubleUp_gray.png in Resources */,
+				F38C9AE91AF817E300FAA910 /* arrow_singleUp_red.png in Resources */,
+				F38C9A9B1AF8106500FAA910 /* NightscoutWatch WatchKit App.app in Resources */,
+				F38C9AE51AF817E300FAA910 /* arrow_singleDown_yellow.png in Resources */,
+				F3C867C61B0163B000603B52 /* arrow_diagDown_gray.png in Resources */,
+				F38C9ACD1AF817E300FAA910 /* arrow_diagUp_red.png in Resources */,
+				F38C9ACF1AF817E300FAA910 /* arrow_doubleDown_green.png in Resources */,
+				F38C9AF01AF81A7100FAA910 /* line@2x.png in Resources */,
+				F3C867C81B0163B000603B52 /* arrow_doubleDown_gray.png in Resources */,
+				F38C9A971AF8106500FAA910 /* Images.xcassets in Resources */,
+				F38C9AD71AF817E300FAA910 /* arrow_doubleUp_red.png in Resources */,
+				F38C9ADF1AF817E300FAA910 /* arrow_over_yellow.png in Resources */,
+				F38C9AD31AF817E300FAA910 /* arrow_doubleDown_yellow.png in Resources */,
+				F38C9AE11AF817E300FAA910 /* arrow_singleDown_green.png in Resources */,
+				F38C9AD11AF817E300FAA910 /* arrow_doubleDown_red.png in Resources */,
+				F38C9AC71AF817E300FAA910 /* arrow_diagDown_red.png in Resources */,
+				F3C867CC1B0163B000603B52 /* arrow_over_gray.png in Resources */,
+				F3C867B31AF938F400603B52 /* arrow_singleUp_green.png in Resources */,
+				F38C9AC91AF817E300FAA910 /* arrow_diagDown_yellow.png in Resources */,
+				F38C9AE31AF817E300FAA910 /* arrow_singleDown_red.png in Resources */,
+				F38C9AC51AF817E300FAA910 /* arrow_diagDown_green.png in Resources */,
+				F38C9ACB1AF817E300FAA910 /* arrow_diagUp_yellow.png in Resources */,
+				F38C9AEB1AF817E300FAA910 /* NS_raw_20.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A981AF8106500FAA910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C867C51B0163B000603B52 /* arrow_diagUp_gray.png in Resources */,
+				F38C9AE81AF817E300FAA910 /* arrow_singleUp_yellow.png in Resources */,
+				F3C867D11B0163B000603B52 /* arrow_singleUp_gray.png in Resources */,
+				F3C867CF1B0163B000603B52 /* arrow_singleDown_gray.png in Resources */,
+				F38C9ADE1AF817E300FAA910 /* arrow_over_red.png in Resources */,
+				F38C9AD61AF817E300FAA910 /* arrow_doubleUp_green.png in Resources */,
+				F38C9ADC1AF817E300FAA910 /* arrow_over_green.png in Resources */,
+				F3C867B11AF938D700603B52 /* arrow_diagUp_green.png in Resources */,
+				F38C9ADA1AF817E300FAA910 /* arrow_doubleUp_yellow.png in Resources */,
+				F38C9AEE1AF817E300FAA910 /* NS_raw_21.png in Resources */,
+				F3C867CB1B0163B000603B52 /* arrow_doubleUp_gray.png in Resources */,
+				F38C9AEA1AF817E300FAA910 /* arrow_singleUp_red.png in Resources */,
+				F38C9AA31AF8106500FAA910 /* Interface.storyboard in Resources */,
+				F38C9AE61AF817E300FAA910 /* arrow_singleDown_yellow.png in Resources */,
+				F3C867C71B0163B000603B52 /* arrow_diagDown_gray.png in Resources */,
+				F38C9ACE1AF817E300FAA910 /* arrow_diagUp_red.png in Resources */,
+				F38C9AD01AF817E300FAA910 /* arrow_doubleDown_green.png in Resources */,
+				F38C9AF11AF81A7100FAA910 /* line@2x.png in Resources */,
+				F3C867C91B0163B000603B52 /* arrow_doubleDown_gray.png in Resources */,
+				F38C9AA51AF8106500FAA910 /* Images.xcassets in Resources */,
+				F38C9AD81AF817E300FAA910 /* arrow_doubleUp_red.png in Resources */,
+				F38C9AE01AF817E300FAA910 /* arrow_over_yellow.png in Resources */,
+				F38C9AD41AF817E300FAA910 /* arrow_doubleDown_yellow.png in Resources */,
+				F38C9AE21AF817E300FAA910 /* arrow_singleDown_green.png in Resources */,
+				F38C9AD21AF817E300FAA910 /* arrow_doubleDown_red.png in Resources */,
+				F38C9AC81AF817E300FAA910 /* arrow_diagDown_red.png in Resources */,
+				F3C867CD1B0163B000603B52 /* arrow_over_gray.png in Resources */,
+				F3C867B41AF938F400603B52 /* arrow_singleUp_green.png in Resources */,
+				F38C9ACA1AF817E300FAA910 /* arrow_diagDown_yellow.png in Resources */,
+				F38C9AE41AF817E300FAA910 /* arrow_singleDown_red.png in Resources */,
+				F38C9AC61AF817E300FAA910 /* arrow_diagDown_green.png in Resources */,
+				F38C9ACC1AF817E300FAA910 /* arrow_diagUp_yellow.png in Resources */,
+				F38C9AEC1AF817E300FAA910 /* NS_raw_20.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F38C9A5B1AF8103C00FAA910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38C9A6B1AF8103C00FAA910 /* ViewController.m in Sources */,
+				F38C9A681AF8103C00FAA910 /* AppDelegate.m in Sources */,
+				F38C9A651AF8103C00FAA910 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A741AF8103C00FAA910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38C9A7F1AF8103C00FAA910 /* NightscoutWatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C9A881AF8106500FAA910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38C9A921AF8106500FAA910 /* InterfaceController.m in Sources */,
+				F3C867BA1AFD1F2500603B52 /* BGHistoryTableRow.m in Sources */,
+				F38C9A951AF8106500FAA910 /* GlanceController.m in Sources */,
+				F3C867B71AFD1E2900603B52 /* TableInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F38C9A7A1AF8103C00FAA910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F38C9A5E1AF8103C00FAA910 /* NightscoutWatch */;
+			targetProxy = F38C9A791AF8103C00FAA910 /* PBXContainerItemProxy */;
+		};
+		F38C9A9D1AF8106500FAA910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F38C9A991AF8106500FAA910 /* NightscoutWatch WatchKit App */;
+			targetProxy = F38C9A9C1AF8106500FAA910 /* PBXContainerItemProxy */;
+		};
+		F38C9AA71AF8106500FAA910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F38C9A8B1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */;
+			targetProxy = F38C9AA61AF8106500FAA910 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F38C9A6C1AF8103C00FAA910 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F38C9A6D1AF8103C00FAA910 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F38C9A711AF8103C00FAA910 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F38C9A721AF8103C00FAA910 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F38C9AA11AF8106500FAA910 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F38C9AA21AF8106500FAA910 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F38C9A801AF8103C00FAA910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F38C9A811AF8103C00FAA910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F38C9A831AF8103C00FAA910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NightscoutWatch/NightscoutWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				INFOPLIST_FILE = NightscoutWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "69e8922b-7090-4d26-85da-d821d7ab89b0";
+			};
+			name = Debug;
+		};
+		F38C9A841AF8103C00FAA910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NightscoutWatch/NightscoutWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				INFOPLIST_FILE = NightscoutWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "69e8922b-7090-4d26-85da-d821d7ab89b0";
+			};
+			name = Release;
+		};
+		F38C9A861AF8103C00FAA910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NightscoutWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightscoutWatch.app/NightscoutWatch";
+			};
+			name = Debug;
+		};
+		F38C9A871AF8103C00FAA910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NightscoutWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightscoutWatch.app/NightscoutWatch";
+			};
+			name = Release;
+		};
+		F38C9AAA1AF8106500FAA910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = NightscoutWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "NightscoutWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1a75e72f-7be8-457c-b273-ece20b13486f";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F38C9AAB1AF8106500FAA910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				IBSC_MODULE = NightscoutWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "NightscoutWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1a75e72f-7be8-457c-b273-ece20b13486f";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F38C9AAD1AF8106500FAA910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NightscoutWatch WatchKit Extension/NightscoutWatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NightscoutWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "ce81f9c8-8142-43a7-b91a-170bd560266a";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F38C9AAE1AF8106500FAA910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NightscoutWatch WatchKit Extension/NightscoutWatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
+				INFOPLIST_FILE = "NightscoutWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "ce81f9c8-8142-43a7-b91a-170bd560266a";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F38C9A5A1AF8103C00FAA910 /* Build configuration list for PBXProject "NightscoutWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38C9A801AF8103C00FAA910 /* Debug */,
+				F38C9A811AF8103C00FAA910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38C9A821AF8103C00FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38C9A831AF8103C00FAA910 /* Debug */,
+				F38C9A841AF8103C00FAA910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38C9A851AF8103C00FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38C9A861AF8103C00FAA910 /* Debug */,
+				F38C9A871AF8103C00FAA910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38C9AA91AF8106500FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38C9AAA1AF8106500FAA910 /* Debug */,
+				F38C9AAB1AF8106500FAA910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38C9AAC1AF8106500FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38C9AAD1AF8106500FAA910 /* Debug */,
+				F38C9AAE1AF8106500FAA910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F38C9A571AF8103C00FAA910 /* Project object */;
+}

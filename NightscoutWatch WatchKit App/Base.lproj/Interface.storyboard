@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="47" alignment="left" id="l7L-ul-Om6">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" id="haf-FB-JIn">
+                                    <color key="textColor" red="0.96862745098039216" green="0.28235294117647058" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="60"/>
+                                </label>
+                                <imageView alignment="center" verticalAlignment="center" image="arrow_doubleDown_red" id="K0l-Bf-tG9"/>
+                            </items>
+                        </group>
+                        <imageView alignment="left" image="line" id="pxc-Cr-3j7"/>
+                        <group width="1" height="18" alignment="left" id="mkL-Wx-Tnh">
+                            <items>
+                                <label alignment="left" text="delta" id="khE-cB-tZ6">
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label alignment="right" id="UJb-dL-jCR">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView alignment="left" image="line" id="NuK-LQ-1yd"/>
+                        <group width="1" height="18" alignment="left" id="tMA-no-VXc">
+                            <items>
+                                <label alignment="left" text="raw" id="jlc-Lk-qDB">
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label alignment="right" id="C2k-r3-oXn">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView alignment="left" image="line" id="djT-0I-hW2"/>
+                        <group width="1" height="18" alignment="left" id="4KZ-LF-781">
+                            <items>
+                                <label alignment="left" text="last reading" id="SZc-Zj-VMk">
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label alignment="right" id="a8g-Nr-R3a">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView alignment="left" image="line" id="bSi-69-QJu"/>
+                        <group width="1" height="18" alignment="left" id="3aU-Vs-sAy">
+                            <items>
+                                <label alignment="left" text="rig" id="TzH-SM-Pfa">
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label alignment="right" id="bO5-ZJ-QQo">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView alignment="left" image="line" id="mzt-Rh-nJG"/>
+                    </items>
+                    <connections>
+                        <outlet property="BGLabel" destination="haf-FB-JIn" id="1GN-r4-ckQ"/>
+                        <outlet property="arrowImg" destination="K0l-Bf-tG9" id="gOT-Ln-CCW"/>
+                        <outlet property="battery" destination="bO5-ZJ-QQo" id="2h3-LO-T0l"/>
+                        <outlet property="delta" destination="UJb-dL-jCR" id="gsP-cH-FW4"/>
+                        <outlet property="lastReading" destination="a8g-Nr-R3a" id="A7e-DY-vAe"/>
+                        <outlet property="lastReadingText" destination="SZc-Zj-VMk" id="LX4-XV-oJ5"/>
+                        <outlet property="raw" destination="C2k-r3-oXn" id="XpK-S5-DqS"/>
+                        <segue destination="fiN-aE-gxC" kind="relationship" relationship="nextPage" id="298-v6-c24"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="141" y="242.07371794871796"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="x7w-X4-SAE">
+            <objects>
+                <controller id="jUc-qS-Cn3">
+                    <items>
+                        <label alignment="left" text="chart" id="v3T-Xp-q1g"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="371" y="530"/>
+        </scene>
+        <!--history-->
+        <scene sceneID="xP2-4Z-n0X">
+            <objects>
+                <controller identifier="TableInterfaceController" title="history" id="fiN-aE-gxC" customClass="TableInterfaceController">
+                    <items>
+                        <table alignment="left" id="utA-so-TDT">
+                            <items>
+                                <tableRow identifier="BGHistoryTableRow" selectable="NO" id="1sj-lj-KKu" customClass="BGHistoryTableRow">
+                                    <group key="rootItem" width="1" height="20" alignment="left" layout="vertical" radius="0.0" id="gPI-cL-6yH">
+                                        <items>
+                                            <group width="1" height="15" alignment="left" spacing="0.0" id="hAQ-Xt-4IU">
+                                                <items>
+                                                    <label width="30" alignment="left" verticalAlignment="center" text="110" textAlignment="right" id="uGv-T7-d4J">
+                                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                                    </label>
+                                                    <label width="35" alignment="left" verticalAlignment="center" text="-20" textAlignment="right" id="QO8-ZP-qAh">
+                                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="4:15 pm" textAlignment="right" id="mZF-dF-mzv">
+                                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <imageView alignment="left" verticalAlignment="bottom" image="line" id="1Ak-b9-iIq"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="deltaLabel" destination="QO8-ZP-qAh" id="lz6-q3-eaw"/>
+                                        <outlet property="sgvLabel" destination="uGv-T7-d4J" id="Zhl-an-haB"/>
+                                        <outlet property="timeLabel" destination="mZF-dF-mzv" id="VAe-aR-bGr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="bgHistoryTable" destination="utA-so-TDT" id="gXw-kV-7JX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="390" y="250"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" layout="vertical" id="gv7-I2-MZq">
+                            <items>
+                                <group width="136" height="47" alignment="left" id="GQN-QE-yRr">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" id="55i-fr-Fnd">
+                                            <color key="textColor" red="0.96862745100000003" green="0.28235294119999998" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" weight="thin" pointSize="60"/>
+                                        </label>
+                                        <imageView alignment="center" verticalAlignment="center" image="arrow_doubleDown_red" id="xx7-Yt-v3B"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" layout="vertical" id="eew-Gs-W6Y">
+                            <items>
+                                <imageView alignment="left" image="line" id="aQb-TZ-Zi8"/>
+                                <group width="1" height="18" alignment="left" id="Q2I-t7-yLa">
+                                    <items>
+                                        <label alignment="left" text="delta" id="QMP-AD-tgU">
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                        <label alignment="right" id="qjb-fq-Wl2">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" image="line" id="aS9-gl-irt"/>
+                                <group width="1" height="18" alignment="left" id="rxT-Rd-MQG">
+                                    <items>
+                                        <label alignment="left" text="raw" id="9lu-vn-eKd">
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                        <label alignment="right" id="R84-md-hGp">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" image="line" id="VgU-rk-IGt"/>
+                                <group width="1" height="18" alignment="left" id="YsJ-VM-OVr">
+                                    <items>
+                                        <label alignment="left" text="last reading" id="ZUN-80-P0W">
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                        <label alignment="right" id="Toq-BB-bMM">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" image="line" id="nyI-be-t0d"/>
+                                <group width="1" height="18" alignment="left" id="Wy6-DY-cs8">
+                                    <items>
+                                        <label alignment="left" text="rig" id="I4k-or-3tc">
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                        <label alignment="right" id="o6O-a8-djD">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" image="line" id="VVV-pv-xTm"/>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="BGLabel" destination="55i-fr-Fnd" id="SQp-Kt-aNx"/>
+                        <outlet property="arrowImg" destination="xx7-Yt-v3B" id="jyQ-8f-4Qo"/>
+                        <outlet property="battery" destination="o6O-a8-djD" id="iXy-BI-NYf"/>
+                        <outlet property="delta" destination="qjb-fq-Wl2" id="IRm-qG-pCj"/>
+                        <outlet property="lastReading" destination="Toq-BB-bMM" id="ejg-Er-n37"/>
+                        <outlet property="lastReadingText" destination="ZUN-80-P0W" id="Gis-XG-juj"/>
+                        <outlet property="raw" destination="R84-md-hGp" id="kiu-sM-laJ"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+</document>
