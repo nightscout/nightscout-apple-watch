@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8834CD701BFC200F008E882D /* NightscoutWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8834CD731BFC200F008E882D /* NightscoutWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */; };
 		F38C9A651AF8103C00FAA910 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A641AF8103C00FAA910 /* main.m */; };
 		F38C9A681AF8103C00FAA910 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A671AF8103C00FAA910 /* AppDelegate.m */; };
 		F38C9A6B1AF8103C00FAA910 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A6A1AF8103C00FAA910 /* ViewController.m */; };
@@ -17,10 +19,8 @@
 		F38C9A921AF8106500FAA910 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A911AF8106500FAA910 /* InterfaceController.m */; };
 		F38C9A951AF8106500FAA910 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C9A941AF8106500FAA910 /* GlanceController.m */; };
 		F38C9A971AF8106500FAA910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A961AF8106500FAA910 /* Images.xcassets */; };
-		F38C9A9B1AF8106500FAA910 /* NightscoutWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */; };
 		F38C9AA31AF8106500FAA910 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AA11AF8106500FAA910 /* Interface.storyboard */; };
 		F38C9AA51AF8106500FAA910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AA41AF8106500FAA910 /* Images.xcassets */; };
-		F38C9AA81AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F38C9AC51AF817E300FAA910 /* arrow_diagDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB01AF817E300FAA910 /* arrow_diagDown_green.png */; };
 		F38C9AC61AF817E300FAA910 /* arrow_diagDown_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB01AF817E300FAA910 /* arrow_diagDown_green.png */; };
 		F38C9AC71AF817E300FAA910 /* arrow_diagDown_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C9AB11AF817E300FAA910 /* arrow_diagDown_red.png */; };
@@ -88,6 +88,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8834CD6E1BFC200F008E882D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F38C9A8B1AF8106500FAA910;
+			remoteInfo = "NightscoutWatch WatchKit Extension";
+		};
+		8834CD711BFC200F008E882D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F38C9A991AF8106500FAA910;
+			remoteInfo = "NightscoutWatch WatchKit App";
+		};
 		F38C9A791AF8103C00FAA910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
@@ -95,32 +109,29 @@
 			remoteGlobalIDString = F38C9A5E1AF8103C00FAA910;
 			remoteInfo = NightscoutWatch;
 		};
-		F38C9A9C1AF8106500FAA910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F38C9A991AF8106500FAA910;
-			remoteInfo = "NightscoutWatch WatchKit App";
-		};
-		F38C9AA61AF8106500FAA910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F38C9A571AF8103C00FAA910 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F38C9A8B1AF8106500FAA910;
-			remoteInfo = "NightscoutWatch WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F38C9AAF1AF8106500FAA910 /* Embed App Extensions */ = {
+		8834CD741BFC200F008E882D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F38C9AA81AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex in Embed App Extensions */,
+				8834CD701BFC200F008E882D /* NightscoutWatch WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8834CD751BFC200F008E882D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8834CD731BFC200F008E882D /* NightscoutWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -372,12 +383,12 @@
 				F38C9A5B1AF8103C00FAA910 /* Sources */,
 				F38C9A5C1AF8103C00FAA910 /* Frameworks */,
 				F38C9A5D1AF8103C00FAA910 /* Resources */,
-				F38C9AAF1AF8106500FAA910 /* Embed App Extensions */,
+				8834CD751BFC200F008E882D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F38C9AA71AF8106500FAA910 /* PBXTargetDependency */,
+				8834CD721BFC200F008E882D /* PBXTargetDependency */,
 			);
 			name = NightscoutWatch;
 			productName = NightscoutWatch;
@@ -413,27 +424,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				F38C9A9D1AF8106500FAA910 /* PBXTargetDependency */,
 			);
 			name = "NightscoutWatch WatchKit Extension";
 			productName = "NightscoutWatch WatchKit Extension";
 			productReference = F38C9A8C1AF8106500FAA910 /* NightscoutWatch WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		F38C9A991AF8106500FAA910 /* NightscoutWatch WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F38C9AA91AF8106500FAA910 /* Build configuration list for PBXNativeTarget "NightscoutWatch WatchKit App" */;
 			buildPhases = (
 				F38C9A981AF8106500FAA910 /* Resources */,
+				8834CD741BFC200F008E882D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8834CD6F1BFC200F008E882D /* PBXTargetDependency */,
 			);
 			name = "NightscoutWatch WatchKit App";
 			productName = "NightscoutWatch WatchKit App";
 			productReference = F38C9A9A1AF8106500FAA910 /* NightscoutWatch WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -441,7 +453,7 @@
 		F38C9A571AF8103C00FAA910 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "30 South";
 				TargetAttributes = {
 					F38C9A5E1AF8103C00FAA910 = {
@@ -527,7 +539,6 @@
 				F38C9AED1AF817E300FAA910 /* NS_raw_21.png in Resources */,
 				F3C867CA1B0163B000603B52 /* arrow_doubleUp_gray.png in Resources */,
 				F38C9AE91AF817E300FAA910 /* arrow_singleUp_red.png in Resources */,
-				F38C9A9B1AF8106500FAA910 /* NightscoutWatch WatchKit App.app in Resources */,
 				F38C9AE51AF817E300FAA910 /* arrow_singleDown_yellow.png in Resources */,
 				F3C867C61B0163B000603B52 /* arrow_diagDown_gray.png in Resources */,
 				F38C9ACD1AF817E300FAA910 /* arrow_diagUp_red.png in Resources */,
@@ -626,20 +637,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8834CD6F1BFC200F008E882D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F38C9A8B1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */;
+			targetProxy = 8834CD6E1BFC200F008E882D /* PBXContainerItemProxy */;
+		};
+		8834CD721BFC200F008E882D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F38C9A991AF8106500FAA910 /* NightscoutWatch WatchKit App */;
+			targetProxy = 8834CD711BFC200F008E882D /* PBXContainerItemProxy */;
+		};
 		F38C9A7A1AF8103C00FAA910 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F38C9A5E1AF8103C00FAA910 /* NightscoutWatch */;
 			targetProxy = F38C9A791AF8103C00FAA910 /* PBXContainerItemProxy */;
-		};
-		F38C9A9D1AF8106500FAA910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F38C9A991AF8106500FAA910 /* NightscoutWatch WatchKit App */;
-			targetProxy = F38C9A9C1AF8106500FAA910 /* PBXContainerItemProxy */;
-		};
-		F38C9AA71AF8106500FAA910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F38C9A8B1AF8106500FAA910 /* NightscoutWatch WatchKit Extension */;
-			targetProxy = F38C9AA61AF8106500FAA910 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -692,6 +703,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -761,6 +773,7 @@
 				INFOPLIST_FILE = NightscoutWatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "69e8922b-7090-4d26-85da-d821d7ab89b0";
 			};
@@ -776,6 +789,7 @@
 				INFOPLIST_FILE = NightscoutWatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "69e8922b-7090-4d26-85da-d821d7ab89b0";
 			};
@@ -795,6 +809,7 @@
 				);
 				INFOPLIST_FILE = NightscoutWatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightscoutWatch.app/NightscoutWatch";
 			};
@@ -810,6 +825,7 @@
 				);
 				INFOPLIST_FILE = NightscoutWatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightscoutWatch.app/NightscoutWatch";
 			};
@@ -827,12 +843,13 @@
 				);
 				IBSC_MODULE = NightscoutWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "NightscoutWatch WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dc.NightscoutWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1a75e72f-7be8-457c-b273-ece20b13486f";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -844,12 +861,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
 				IBSC_MODULE = NightscoutWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "NightscoutWatch WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dc.NightscoutWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1a75e72f-7be8-457c-b273-ece20b13486f";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -865,9 +883,13 @@
 				);
 				INFOPLIST_FILE = "NightscoutWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dc.NightscoutWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "ce81f9c8-8142-43a7-b91a-170bd560266a";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -879,9 +901,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 South LLC (CLG3T57FS8)";
 				INFOPLIST_FILE = "NightscoutWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dc.NightscoutWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "ce81f9c8-8142-43a7-b91a-170bd560266a";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
