@@ -52,65 +52,62 @@
     
     NSURL *nightScoutUrl = [NSURL URLWithString:thisUrl];
     
+    
+    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:nightScoutUrl
                                                            cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                                        timeoutInterval:60];
     [request setHTTPMethod:@"GET"];
     
-    NSURLResponse * response = nil;
-    NSError * error = nil;
-    NSData * data = [NSURLConnection sendSynchronousRequest:request
-                                          returningResponse:&response
-                                                      error:&error];
-    
-    
-    
-    if (error == nil)
-    {
-        NSArray *sgvArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-        
-        for (int i = 0; i < (int)([sgvArray count]-1); i++)
-        {
-            NSDictionary *jsonDict = [sgvArray objectAtIndex:i];
-            NSDictionary *nextDict = [sgvArray objectAtIndex:i+1];
-            
-            id temp = [jsonDict objectForKey:@"sgv"];
-            NSString *sgv;
-            if ([temp isKindOfClass:[NSString class]])
-            {
-                sgv = temp;
-            }
-            else
-            {
-                sgv = [temp stringValue];
-            }
-
-            NSString *nextSgv = [nextDict objectForKey:@"sgv"];
-            
-            int sgvInt = [sgv intValue];
-            int nextSgvInt = [nextSgv intValue];
-            
-            int delta = sgvInt - nextSgvInt;
-            
-            [deltaListArray addObject:[NSString stringWithFormat:@"%d", delta]];
-            [sgvListArray addObject:sgv];
-            
-            NSString *datetime = [jsonDict objectForKey:@"date"];
-            
-            long dateInt = [datetime longLongValue];
-            
-            NSDate *date = [NSDate dateWithTimeIntervalSince1970:dateInt/1000];
-            NSDateFormatter *dateFormatter1 = [[NSDateFormatter alloc] init];
-            [dateFormatter1 setDateFormat:@"h:mm a"];
-            NSString *timeString = [dateFormatter1 stringFromDate:date];
-            
-            [dateListArray addObject:timeString];
-            
-        }
-        
-        
-        [self performSelectorOnMainThread:@selector(configureTableWithData:) withObject:nil waitUntilDone:false];
-    }
+    [[NSURLSession sharedSession] dataTaskWithRequest:request
+                                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+                                        if (error == nil)
+                                        {
+                                            NSArray *sgvArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                            
+                                            for (int i = 0; i < (int)([sgvArray count]-1); i++)
+                                            {
+                                                NSDictionary *jsonDict = [sgvArray objectAtIndex:i];
+                                                NSDictionary *nextDict = [sgvArray objectAtIndex:i+1];
+                                                
+                                                id temp = [jsonDict objectForKey:@"sgv"];
+                                                NSString *sgv;
+                                                if ([temp isKindOfClass:[NSString class]])
+                                                {
+                                                    sgv = temp;
+                                                }
+                                                else
+                                                {
+                                                    sgv = [temp stringValue];
+                                                }
+                                                
+                                                NSString *nextSgv = [nextDict objectForKey:@"sgv"];
+                                                
+                                                int sgvInt = [sgv intValue];
+                                                int nextSgvInt = [nextSgv intValue];
+                                                
+                                                int delta = sgvInt - nextSgvInt;
+                                                
+                                                [deltaListArray addObject:[NSString stringWithFormat:@"%d", delta]];
+                                                [sgvListArray addObject:sgv];
+                                                
+                                                NSString *datetime = [jsonDict objectForKey:@"date"];
+                                                
+                                                long dateInt = [datetime longLongValue];
+                                                
+                                                NSDate *date = [NSDate dateWithTimeIntervalSince1970:dateInt/1000];
+                                                NSDateFormatter *dateFormatter1 = [[NSDateFormatter alloc] init];
+                                                [dateFormatter1 setDateFormat:@"h:mm a"];
+                                                NSString *timeString = [dateFormatter1 stringFromDate:date];
+                                                
+                                                [dateListArray addObject:timeString];
+                                                
+                                            }
+                                            
+                                            
+                                            [self performSelectorOnMainThread:@selector(configureTableWithData:) withObject:nil waitUntilDone:false];
+                                        }
+                                    }];
 }
 
 - (void)configureTableWithData:(NSArray*)dataObjects {

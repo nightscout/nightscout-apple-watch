@@ -452,22 +452,16 @@
                                                        timeoutInterval:60];
     [request setHTTPMethod:@"GET"];
     
-    NSURLResponse * response = nil;
-    NSError * error = nil;
-    NSData * data = [NSURLConnection sendSynchronousRequest:request
-                                          returningResponse:&response
-                                                      error:&error];
-    
-    
-    
-    if (error == nil)
-    {      
-        NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-        
-        [self performSelectorOnMainThread:@selector(setupDisplay:) withObject:jsonDict waitUntilDone:false];
-        
-    }
-    
+    [[NSURLSession sharedSession] dataTaskWithRequest:request
+                                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+                                        if (error == nil)
+                                        {
+                                            NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                            
+                                            [self performSelectorOnMainThread:@selector(setupDisplay:) withObject:jsonDict waitUntilDone:false];
+                                            
+                                        }
+                                    }];
 }
 
 - (void)didDeactivate {
